@@ -1,4 +1,5 @@
 #include "Deck.h"
+#include <iostream>
 
 Deck::Deck()
 {
@@ -48,6 +49,14 @@ Card *Deck::deal_card()
 int Deck::get_size()
 {
     return m_deck.size();
+}
+
+void Deck::print_deck()
+{
+    for (int i = 0; i < m_deck.size(); i++)
+    {
+        std::cout << m_deck[i]->get_name_string() << std::endl;
+    }
 }
 
 void Deck::reset()

@@ -28,13 +28,17 @@ public:
     /**
      * @brief Construct a new Deck object. When the object is created, the deck is populated with all 52 cards in the order of their suit and value.
      *  The deck is not shuffled. unless the shuffle() function is called.
+     * The default implementation to create a deck is:
+     * - Create a vector of cards
+     * - The cards values are 1-13 (Ace-King)
+     * - The cards suits are 0-3 (clubs, diamonds, hearts, spades)
      */
     Deck();
 
     /**
-     * @brief Destroy the Deck object
+     * @brief Destroy the Deck object.
      */
-    ~Deck();
+    virtual ~Deck();
 
     /**
      * @brief Shuffle the deck of cards. This function is virtual and can be overridden by subclasses. This is because the
@@ -73,6 +77,12 @@ public:
      *
      */
     virtual void reset();
+
+    /**
+     * @brief Print the deck of cards.
+     *
+     */
+    virtual void print_deck();
 
 private:
     /**
