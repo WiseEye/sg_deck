@@ -1,0 +1,52 @@
+\hypertarget{_deck_8h}{}\doxysection{src/\+Deck.h File Reference}
+\label{_deck_8h}\index{src/Deck.h@{src/Deck.h}}
+
+
+A class representing a deck of playing cards. This class is abstract and can be used as a base class for other decks with different rules for dealing cards and shuffling. Many function has a default implementation that can be overridden by subclasses. This is because the rules of the deck can be different depending on the game. example\+: A deck of cards with the following rules\+:  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Card.\+h\char`\"{}}\newline
+Include dependency graph for Deck.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{_deck_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{_deck_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_deck}{Deck}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a deck of playing cards. This class is abstract and can be used as a base class for other decks with different rules for dealing cards and shuffling. Many function has a default implementation that can be overridden by subclasses. This is because the rules of the deck can be different depending on the game. example\+: A deck of cards with the following rules\+: 
+
+\begin{DoxyAuthor}{Author}
+Daniel Heinen
+\begin{DoxyItemize}
+\item The deck is shuffled after every deal
+\item The deck is reshuffled if it is empty
+\item The deck is reshuffled if it is below a certain threshold These are just examples and can be changed to suit the game.
+\end{DoxyItemize}
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/06-\/12
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}

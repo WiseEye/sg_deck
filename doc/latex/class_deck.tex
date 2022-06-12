@@ -1,0 +1,120 @@
+\hypertarget{class_deck}{}\doxysection{Deck Class Reference}
+\label{class_deck}\index{Deck@{Deck}}
+
+
+{\ttfamily \#include $<$Deck.\+h$>$}
+
+
+
+Collaboration diagram for Deck\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_deck__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}{Deck}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_deck}{Deck}} object. When the object is created, the deck is populated with all 52 cards in the order of their suit and value. The deck is not shuffled. unless the \mbox{\hyperlink{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{shuffle()}} function is called. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_deck_a7d1331cc558c302fdf44e5ae8aae1a95}{$\sim$\+Deck}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_deck}{Deck}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{shuffle}} ()
+\begin{DoxyCompactList}\small\item\em Shuffle the deck of cards. This function is virtual and can be overridden by subclasses. This is because the shuffle of a deck can be different depending on the game. The default implementation uses Fisher-\/\+Yates shuffle algorithm. The following is an example of the Fisher-\/\+Yates shuffle algorithm\+: \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_card}{Card}} $\ast$ \mbox{\hyperlink{class_deck_a7331eb52c5c4db3fd8560cbf5287f823}{deal\+\_\+card}} ()
+\begin{DoxyCompactList}\small\item\em Deal a card from the top of the deck. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_deck_a4b7d0539cd9a81363622a63166c39db8}{get\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of cards in the deck. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_deck_a14aa4f2f94b6b880cd575cf17af26762}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset the deck to its original state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}\label{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}} 
+\index{Deck@{Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{Deck()}{Deck()}}
+{\footnotesize\ttfamily Deck\+::\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_deck}{Deck}} object. When the object is created, the deck is populated with all 52 cards in the order of their suit and value. The deck is not shuffled. unless the \mbox{\hyperlink{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{shuffle()}} function is called. 
+
+\mbox{\Hypertarget{class_deck_a7d1331cc558c302fdf44e5ae8aae1a95}\label{class_deck_a7d1331cc558c302fdf44e5ae8aae1a95}} 
+\index{Deck@{Deck}!````~Deck@{$\sim$Deck}}
+\index{````~Deck@{$\sim$Deck}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{$\sim$Deck()}{~Deck()}}
+{\footnotesize\ttfamily Deck\+::$\sim$\+Deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{class_deck}{Deck}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_deck_a7331eb52c5c4db3fd8560cbf5287f823}\label{class_deck_a7331eb52c5c4db3fd8560cbf5287f823}} 
+\index{Deck@{Deck}!deal\_card@{deal\_card}}
+\index{deal\_card@{deal\_card}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{deal\_card()}{deal\_card()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_card}{Card}} $\ast$ Deck\+::deal\+\_\+card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deal a card from the top of the deck. 
+
+\begin{DoxyReturn}{Returns}
+Card$\ast$ A pointer to the card that was dealt 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_deck_a4b7d0539cd9a81363622a63166c39db8}\label{class_deck_a4b7d0539cd9a81363622a63166c39db8}} 
+\index{Deck@{Deck}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily int Deck\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of cards in the deck. 
+
+\begin{DoxyReturn}{Returns}
+int The number of cards in the deck 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_deck_a14aa4f2f94b6b880cd575cf17af26762}\label{class_deck_a14aa4f2f94b6b880cd575cf17af26762}} 
+\index{Deck@{Deck}!reset@{reset}}
+\index{reset@{reset}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Deck\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+reset the deck to its original state. 
+
+\mbox{\Hypertarget{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}\label{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}} 
+\index{Deck@{Deck}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle()}{shuffle()}}
+{\footnotesize\ttfamily void Deck\+::shuffle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Shuffle the deck of cards. This function is virtual and can be overridden by subclasses. This is because the shuffle of a deck can be different depending on the game. The default implementation uses Fisher-\/\+Yates shuffle algorithm. The following is an example of the Fisher-\/\+Yates shuffle algorithm\+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = deck.size() -\/ 1; i > 0; i-\/-\/)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{   \textcolor{keywordtype}{int} j = rand() \% (i + 1);}
+\DoxyCodeLine{  \mbox{\hyperlink{class_card}{Card}} temp = deck[i];}
+\DoxyCodeLine{ deck[i] = deck[j];}
+\DoxyCodeLine{deck[j] = temp;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_deck_8h}{Deck.\+h}}\item 
+src/\mbox{\hyperlink{_deck_8cpp}{Deck.\+cpp}}\end{DoxyCompactItemize}

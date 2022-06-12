@@ -7,6 +7,6 @@ TEST(DeckTest, TestDeckConstructor)
     EXPECT_EQ(52, deck.get_size());
 }
 
-TET(DeckTest, TestDeckShuffle)
+TEST(DeckTest, TestDeckShuffle)
 {
 }
